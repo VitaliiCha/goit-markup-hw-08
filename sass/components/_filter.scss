@@ -1,0 +1,34 @@
+.button-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.btn {
+    margin-right: 8px;
+    &:last-child {
+            margin-right: 0;
+        }
+}
+
+.portfolio-button {
+    border-radius: 4px;
+    padding: 6px 22px;
+    cursor: pointer;
+    border: none;
+    background: var(--second-color-button);
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:active,
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color-text);
+        color: var(--second-text-color);
+        box-shadow: 0 5px 3px -2px rgba(0, 0, 0, 0.3);
+    }
+}

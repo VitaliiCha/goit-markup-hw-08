@@ -1,0 +1,24 @@
+.client-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.client-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: #afb1b8;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        fill: var(--accent-color-text);
+        border: 1px solid var(--accent-color-text);
+        border-radius: 4px;
+    }
+}

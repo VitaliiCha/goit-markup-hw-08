@@ -1,0 +1,31 @@
+.accept {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--color-text);
+    & label {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    & a {
+        text-decoration: none;
+        color: var(--accent-color-text);
+        text-decoration: underline;
+    }
+    & input:checked+label .checkbox {
+         background: var(--accent-color-text);
+         border: 2px solid var(--accent-color-text);
+     }
+}
+
+.checkbox {
+    margin-right: 7px;
+    border: 3px solid var(--color-title);
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    display: flex;
+}
