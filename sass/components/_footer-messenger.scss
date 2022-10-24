@@ -1,5 +1,6 @@
 .footer-list {
-    display: flex;
+    display: flex; 
+    justify-content: center;
     & .footer-messengers:first-child {
             margin-right: 10px;
         }

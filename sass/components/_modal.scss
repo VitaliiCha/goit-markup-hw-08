@@ -7,6 +7,7 @@
     background: rgba(0, 0, 0, 0.2);
     transition-duration: 500ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    overflow-y: scroll;
 }
 
 .modal {
@@ -15,12 +16,33 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 528px;
-    height: 581px;
+    max-width: 450px;
+    min-height: 609px;
     background: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+
+    @media screen and (max-width: 480px) {
+    & {
+        width: 90%;
+    }
+}
+}
+
+@media screen and (min-width: 1200px) {
+    .modal {
+        width: 528px;
+    }
+
+    .close-button {
+        top: 10px;
+        right: 10px;
+    }
+
+    .modal-title {
+        line-height: 1.17;
+    }
 }
 
 .close-button {
@@ -28,8 +50,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 10px;
-    right: 10px;
+    top: 8px;
+    right: 8px;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -40,8 +62,8 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-            fill: var(--accent-color-text);
-        }
+        fill: var(--accent-color-text);
+    }
 }
 
 .is-hidden {
@@ -57,7 +79,7 @@
 .modal-title {
     font-weight: 700;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--color-title);
@@ -68,25 +90,27 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
-    & label {
-            margin-bottom: 4px;
-            font-size: 12px;
-            line-height: 14px;
-            letter-spacing: 0.01em;
-            color: var(--color-text);
-        }
-        & svg {
-             position: absolute;
-             top: 50%;
-             left: 12px;
-             transform: translate(0, -50%);
-             transition-duration: 250ms;
-             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-         }
+}
+
+.form-element label {
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: var(--color-text);
 }
 
 .form-icon {
     position: relative;
+}
+
+.form-element svg {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translate(0, -50%);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-element input {
@@ -99,10 +123,12 @@
     outline: none;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:focus {
-            border: 1px solid var(--accent-color-text);
-        }
-    &:focus + svg {
-        fill: var(--accent-color-text);
-    }
+}
+
+.form-element input:focus {
+    border: 1px solid var(--accent-color-text);
+}
+
+.form-element input:focus+svg {
+    fill: var(--accent-color-text);
 }

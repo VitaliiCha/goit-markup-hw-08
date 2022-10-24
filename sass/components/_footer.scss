@@ -2,30 +2,23 @@
     background-color: var(--second-background-color);
     padding-top: 60px;
     padding-bottom: 60px;
-    &-item {
-            display: flex;
-        }
+    text-align: center;
     &-addr {
-        font-style: inherit;
-        margin-top: 20px;
-    }
-    &-text {
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 16px;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: #ffffff;
-        margin-bottom: 20px;
-    }
+            font-style: inherit;
+            margin-top: 20px;
+            margin-bottom: 60px;
+        }
 }
+
+
+
 .logo-footer {
     text-decoration: none;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     color: var(--second-text-color);
 }
@@ -40,16 +33,60 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-            color: var(--accent-color-text);
-        }
-    &-text {
-        margin: 9px 0;
+        color: var(--accent-color-text);
     }
 }
 .map {
     color: var(--second-text-color);
+    margin-top: 20px;
+    margin-bottom: 8px;
 }
+.link-text {
+    margin-top: 8px;
+}
+
 .messengers {
-    margin-left: 70px;
-    margin-top: 12px;
+    margin-top: 20px;
+}
+
+.footer-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-item {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer {
+        display: flex;
+        text-align: start;
+    }
+
+    .footer-addr {
+        margin-bottom: 0;
+    }
+
+    .footer-item {
+        display: flex;
+    }
+
+    .logo-footer {
+        font-size: 26px;
+        line-height: 1.19;
+    }
+
+    .link-text {
+        margin: 9px 0;
+    }
 }

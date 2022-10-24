@@ -21,47 +21,99 @@
   </head>
   <body class="page">
     <!--Шапка-->
-    <header class="header">
-      <div class="conteiner header__nav">
-        <nav>
-          <!--Логотип-->
-          <div class="header__nav">
-            <a lang="en" href="./index.html" title="Головна сторінка" class="logo line"
-              ><span class="accent">Web</span>Studio</a
-            >
-            <!--меню навігації-->
-            <ul class="header__site-nav list">
-              <li class="item"><a href="./index.html" class="header__text-nav">Студія</a></li>
-              <li class="item">
-                <a href="./portfolio.html" class="header__text-nav current">Портфоліо</a>
-              </li>
-              <li class="item"><a href="" class="header__text-nav">Контакти</a></li>
-            </ul>
+  <header class="header">
+    <div class="conteiner header__nav">
+      <nav class="">
+        <!--Логотип-->
+        <div class="header__nav ">
+          <div class="mob__header">
+            <a lang="en" href="./index.html" title="Головна сторінка" class="logo line"><span
+                class="accent">Web</span>Studio</a>
+            <button type="button" class="menu-button js-open-menu">
+              <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+                <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+              </svg>
+            </button>
           </div>
-        </nav>
-        <!--Контакти-->
-        <ul class="header__contact list">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="header__link"
-              ><span></span>
-              <svg width="20px" height="16px">
-                <use href="./images/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="item">
-            <a href="tel:+380961111111" class="header__link">
-              <svg width="10px" height="16px">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +38 (096) 111 11 11</a
-            >
-          </li>
-        </ul>
-      </div>
-    </header>
-    <main>
+          <ul class="header__site-nav menu list">
+            <li class="item">
+              <a href="./index.html" class="header__text-nav ">Студія</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="header__text-nav current ">Портфоліо</a>
+            </li>
+            <li class="item"><a href="" class="header__text-nav">Контакти</a></li>
+          </ul>
+        </div>
+      </nav>
+      <ul class="header__contact list">
+        <li class="item">
+          <a href="mailto:info@devstudio.com" class="header__link">
+            <svg class="link__imail">
+              <use href="./images/icons.svg#icon-envelope"></use>
+            </svg>
+            info@devstudio.com</a>
+        </li>
+        <li class="item">
+          <a href="tel:+380961111111" class="header__link">
+            <svg class="link__phone">
+              <use href="./images/icons.svg#icon-smartphone"></use>
+            </svg>
+            +38 (096) 111 11 11</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <div class="menu-conteiner list  js-menu-container">
+    <button type="button" class="menu-button js-close-menu">
+      <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+        <use class="icon-cross " href="./images/icons.svg#icon-cross"></use>
+      </svg>
+    </button>
+    <div class="mobile-menu">
+      <ul class="mobile__site-nav list">
+        <li class="item">
+          <a href="./index.html" class="mobile__text-nav ">Студія</a>
+        </li>
+        <li class="item">
+          <a href="./portfolio.html" class="mobile__text-nav current">Портфоліо</a>
+        </li>
+        <li class="item"><a href="" class="mobile__text-nav">Контакти</a></li>
+      </ul>
+      <ul class="mobile__contact list">
+        <li class="item">
+          <a href="tel:+380961111111" class=" mobile__link">
+            +38 096 111 11 11</a>
+        </li>
+        <li class="item">
+          <a href="mailto:info@devstudio.com" class="mail__link"><span></span>
+            info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="mob__messenger-box list">
+        <li>
+          <a href="" rel="noopener noreferrer nofoll" target="_blank" class="mob__messengers">
+            Instagram<span class="mob-line">|</span>
+          </a>
+        </li>
+        <li>
+          <a href="" rel="noopener noreferrer nofoll" target="_blank" class="mob__messengers">
+            Twitter<span class="mob-line">|</span>
+        </li>
+        <li>
+          <a href="" rel="noopener noreferrer nofoll" target="_blank" class="mob__messengers">
+            Facebook<span class="mob-line">|</span>
+          </a>
+        </li>
+        <li>
+          <a href="" rel="noopener noreferrer nofoll" target="_blank" class="mob__messengers">
+            Linkedin
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <main>
       <!--Портфоліо-->
       <section class="section">
         <div class="conteiner">
@@ -105,8 +157,7 @@
                 <img
                   src="./images/projects/poster.jpg"
                   alt="Постер New Orlean vs Golden Star"
-                  width="370"
-                  height="294"
+                  
                 />
                 <p class="project-img-text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
@@ -124,8 +175,7 @@
                 <img
                   src="./images/projects/restaraunt-seafood.jpg"
                   alt="Ресторан Seafood"
-                  width="370"
-                  height="294"
+                  
                 />
                 <p class="project-img-text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
@@ -143,8 +193,7 @@
                 <img
                   src="./images/projects/project-prime.jpg"
                   alt="Проєкт Prime"
-                  width="370"
-                  height="294"
+                  
                 />
                 <p class="project-img-text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
@@ -162,8 +211,7 @@
                 <img
                   src="./images/projects/project-boxes.jpg"
                   alt="Проєкт Boxes"
-                  width="370"
-                  height="294"
+                  
                 />
                 <p class="project-img-text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
@@ -181,8 +229,7 @@
                 <img
                   src="./images/projects/inspiration-has-no-borders.jpg"
                   alt="Inspiration has no Borders"
-                  width="370"
-                  height="294"
+                  
                 />
                 <p class="project-img-text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
@@ -200,8 +247,7 @@
                 <img
                   src="./images/projects/edition-limited-edition.jpg"
                   alt="Видання Limited Edition"
-                  width="370"
-                  height="294"
+                  
                 />
                 <p class="project-img-text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
@@ -219,8 +265,7 @@
                 <img
                   src="./images/projects/project-lab.jpg"
                   alt="Проєкт LAB"
-                  width="370"
-                  height="294"
+                  
                 />
                 <p class="project-img-text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
@@ -238,8 +283,7 @@
                 <img
                   src="./images/projects/growing-business.jpg"
                   alt="Growing Business"
-                  width="370"
-                  height="294"
+                  
                 />
                 <p class="project-img-text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
@@ -357,6 +401,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./JS/modal.js"></script>
   </body>
 </html>

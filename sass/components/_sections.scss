@@ -1,3 +1,8 @@
+@media screen and (max-width: 1200px) {
+    .create {
+        display: none;
+    }
+}
 .sections {
     padding-bottom: 94px;
     &-name {
@@ -8,24 +13,7 @@
             letter-spacing: 0.03em;
             color: var(--color-title);
         }
-    &-text {
-        position: absolute;
-        bottom: 0;
-        width: 370px;
-        height: 70px;
-        background: rgba(47, 48, 58, 0.8);
-        font-size: 14px;
-        line-height: 16px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: #ffffff;
-    }
 }
-
-
 .img-services {
     display: flex;
     justify-content: space-between;
@@ -35,4 +23,20 @@
 .img-text {
     position: relative;
     display: flex;
+}
+
+.sections-text {
+    position: absolute;
+    bottom: 0;
+    width: 370px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
 }

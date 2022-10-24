@@ -1,8 +1,17 @@
-.personal-item {
-    display: flex;
-    & .text+.text {
-            margin-left: 30px;
-        }
+.personal-title {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--color-title);
+}
+
+.personal-text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
 }
 
 .text::before {
@@ -36,17 +45,30 @@
     background-size: 70px;
 }
 
-.personal-title {
-    margin-bottom: 10px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    color: var(--color-title);
+@media screen and (min-width: 768px) {
+    .personal-item {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+
+    .personal-title {
+        text-align: left;
+    }
+
+    .personal-table {
+        width: calc((100% - 2 * 30px) / 2);
+        margin: 15px;
+    }
 }
 
-.personal-text {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+@media screen and (min-width: 1200px) {
+    .personal-item {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .personal-title {
+        text-align: left;
+    }
 }

@@ -1,9 +1,30 @@
 .header {
     border-bottom: 1px solid #ececec;
-    &__nav {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
+    position: relative;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mob__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (min-width: 599px) {
+    .header__nav {
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header__nav {
+        width: 100%;
+    }
 }
 

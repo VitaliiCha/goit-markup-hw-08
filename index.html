@@ -25,40 +25,98 @@
       <div class="conteiner header__nav">
         <nav class="">
           <!--Логотип-->
-          <div class="header__nav">
+          <div class="header__nav ">
+            <div class="mob__header">
             <a lang="en" href="./index.html" title="Головна сторінка" class="logo line"
               ><span class="accent">Web</span>Studio</a
             >
-            <!--меню навігації-->
-            <ul class="header__site-nav list">
-              <li class="item"><a href="./index.html" class="header__text-nav current">Студія</a></li>
-              <li class="item"><a href="./portfolio.html" class="header__text-nav">Портфоліо</a></li>
+            <button type="button" class="menu-button js-open-menu">
+              <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+                <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+              </svg>
+            </button>
+            </div>
+            <ul class="header__site-nav menu list">
+              <li class="item">
+                <a href="./index.html" class="header__text-nav current">Студія</a>
+              </li>
+              <li class="item">
+                <a href="./portfolio.html" class="header__text-nav">Портфоліо</a>
+              </li>
               <li class="item"><a href="" class="header__text-nav">Контакти</a></li>
             </ul>
           </div>
-        </nav>
-        <!--Контакти-->
-        <ul class="header__contact list">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="header__link"
-              ><span></span>
-              <svg width="20px" height="16px">
-                <use href="./images/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="item">
-            <a href="tel:+380961111111" class="header__link">
-              <svg width="10px" height="16px">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +38 (096) 111 11 11</a
-            >
-          </li>
-        </ul>
+          </nav>
+            <ul class="header__contact list">
+              <li class="item">
+                <a href="mailto:info@devstudio.com" class="header__link"
+                  >
+                  <svg class="link__imail" >
+                    <use href="./images/icons.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="item">
+                <a href="tel:+380961111111" class="header__link">
+                  <svg class="link__phone" >
+                    <use href="./images/icons.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 (096) 111 11 11</a
+                >
+              </li>
+            </ul>
       </div>
     </header>
+    <div class="menu-conteiner list  js-menu-container">
+          <button type="button" class="menu-button js-close-menu">
+            <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+              <use class="icon-cross " href="./images/icons.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu">
+          <ul class="mobile__site-nav list">
+            <li class="item">
+              <a href="./index.html" class="mobile__text-nav current">Студія</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="mobile__text-nav">Портфоліо</a>
+            </li>
+            <li class="item"><a href="" class="mobile__text-nav">Контакти</a></li>
+          </ul>
+          <ul class="mobile__contact list">
+            <li class="item">
+              <a href="tel:+380961111111" class=" mobile__link">
+                +38 096 111 11 11</a>
+            </li>
+            <li class="item">
+              <a href="mailto:info@devstudio.com" class="mail__link"><span></span>
+                info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="mob__messenger-box list">
+            <li>
+              <a href="" rel="noopener noreferrer nofoll" target="_blank" class="mob__messengers">
+              Instagram<span class="mob-line">|</span>
+              </a>
+            </li>
+            <li>
+              <a href="" rel="noopener noreferrer nofoll" target="_blank" class="mob__messengers">
+                Twitter<span class="mob-line">|</span>
+            </li>
+            <li>
+              <a href="" rel="noopener noreferrer nofoll" target="_blank" class="mob__messengers">
+              Facebook<span class="mob-line">|</span>
+              </a>
+            </li>
+            <li>
+              <a href="" rel="noopener noreferrer nofoll" target="_blank" class="mob__messengers">
+                Linkedin
+              </a>
+            </li>
+          </ul>
+          </div>
+      </div>
     <main>
       <!--Герой-->
       <section class="hero__back">
@@ -72,25 +130,25 @@
         <div class="conteiner">
           <h2 class="visually-hidden">Особливості</h2>
           <ul class="list personal-item">
-            <li class="text">
+            <li class="text personal-table">
               <h3 class="personal-title">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="personal-text">
                 Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
-            <li class="text">
+            <li class="text personal-table">
               <h3 class="personal-title">ПУНКТУАЛЬНІСТЬ</h3>
               <p class="personal-text">
                 Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </li>
-            <li class="text diagram">
+            <li class="text diagram personal-table">
               <h3 class="personal-title">ПЛАНУВАННЯ</h3>
               <p class="personal-text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="text astronaut">
+            <li class="text astronaut personal-table">
               <h3 class="personal-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p class="personal-text">
                 Значимість цих проблем настільки очевидна, що реалізація планових завдань.
@@ -100,21 +158,24 @@
         </div>
       </section>
       <!--Чим ми займаємося-->
-      <section class="sections">
+      <section class="sections create">
         <div class="conteiner">
           <h2 class="sections-name">Чим ми займаємося</h2>
           <ul class="list img-services">
             <li class="img-text">
               <img
+                srcset="./images/what_do_we_do/box1.jpg 1x, ./images/what_do_we_do/box1-2.jpg 2x"
                 src="./images/what_do_we_do/box1.jpg"
                 alt="Десктопні додатки"
                 width="370"
                 height="294"
+                
               />
               <p class="sections-text">Десктопні додатки</p>
             </li>
             <li class="img-text">
               <img
+                srcset="./images/what_do_we_do/box2.jpg 1x, ./images/what_do_we_do/box2-2.jpg 2x"
                 src="./images/what_do_we_do/box2.jpg"
                 alt="Мобільні додатки"
                 width="370"
@@ -124,6 +185,7 @@
             </li>
             <li class="img-text">
               <img
+                srcset="./images/what_do_we_do/box3.jpg 1x, ./images/what_do_we_do/box3-2.jpg 2x"
                 src="./images/what_do_we_do/box3.jpg"
                 alt="Дизайнерські рішення"
                 width="370"
@@ -141,10 +203,9 @@
           <ul class="list our-img conteiner">
             <li class="our-box">
               <img
+                class="our-picture"
                 src="./images/our_team/ihor_demyanenko.jpg"
                 alt="Ігор Дем'яненко"
-                width="270"
-                height="260"
               />
               <h3 class="our-names">Ігор Дем'яненко</h3>
               <p class="our-prof">Product Designer</p>
@@ -200,12 +261,7 @@
               </ul>
             </li>
             <li class="our-box">
-              <img
-                src="./images/our_team/olga-repina.jpg"
-                alt="Ольга Рєпіна"
-                width="270"
-                height="260"
-              />
+              <img class="our-picture" src="./images/our_team/olga-repina.jpg" alt="Ольга Рєпіна" />
               <h3 class="our-names">Ольга Рєпіна</h3>
               <p class="our-prof">Frontend Developer</p>
               <ul class="list our-list">
@@ -261,10 +317,9 @@
             </li>
             <li class="our-box">
               <img
+                class="our-picture"
                 src="./images/our_team/mykola_tarasov.jpg"
                 alt="Микола Тарасов"
-                width="270"
-                height="260"
               />
               <h3 class="our-names">Микола Тарасов</h3>
               <p class="our-prof">Marketing</p>
@@ -321,10 +376,9 @@
             </li>
             <li class="our-box">
               <img
+                class="our-picture"
                 src="./images/our_team/mykhailo_yermakov.jpg"
                 alt="Михайло Єрмаков"
-                width="270"
-                height="260"
               />
               <h3 class="our-names">Михайло Єрмаков</h3>
               <p class="our-prof">UI Designer</p>
@@ -386,42 +440,42 @@
       <section class="conteiner section">
         <h2 class="sections-name">Постійні клієнти</h2>
         <ul class="list client-list">
-          <li>
+          <li class="client-box">
             <a href="" rel="noopener noreferrer nofoll" target="_blank" class="client-img">
               <svg width="41px" height="46.7px">
                 <use href="./images/icons.svg#icon-group-1"></use>
               </svg>
             </a>
           </li>
-          <li>
+          <li class="client-box">
             <a href="" rel="noopener noreferrer nofoll" target="_blank" class="client-img">
               <svg width="40px" height="52px">
                 <use href="./images/icons.svg#icon-group-2"></use>
               </svg>
             </a>
           </li>
-          <li>
+          <li class="client-box">
             <a href="" rel="noopener noreferrer nofoll" target="_blank" class="client-img">
               <svg width="43.46px" height="41.18px">
                 <use href="./images/icons.svg#icon-group-4"></use>
               </svg>
             </a>
           </li>
-          <li>
+          <li class="client-box">
             <a href="" rel="noopener noreferrer nofoll" target="_blank" class="client-img">
               <svg width="84.44px" height="40.62px">
                 <use href="./images/icons.svg#icon-group-6-1"></use>
               </svg>
             </a>
           </li>
-          <li>
+          <li class="client-box">
             <a href="" rel="noopener noreferrer nofoll" target="_blank" class="client-img">
               <svg width="62.54px" height="45.43px">
                 <use href="./images/icons.svg#icon-group-5"></use>
               </svg>
             </a>
           </li>
-          <li>
+          <li class="client-box">
             <a href="" rel="noopener noreferrer nofoll" target="_blank" class="client-img">
               <svg width="93.79px" height="43.93px">
                 <use href="./images/icons.svg#icon-group-6"></use>
@@ -452,7 +506,7 @@
               <li class="link-text">
                 <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
               </li>
-              <li>
+              <li class="link-text">
                 <a href="tel:+380961111111" class="link">+38 (096) 111 11 11</a>
               </li>
             </ul>
@@ -520,25 +574,26 @@
           <form action="">
             <label for="futer-email" class="footer-text">Підпишіться на розсилку</label>
             <div class="subscribe-area">
-            <input
-              type="email"
-              id="futer-email"
-              name="futer-email"
-              placeholder="E-mail"
-              class="futer-email"
-              required
-            />
-            <button type="submit" class="futer-btn">
-              Підписатися
-              <svg viewBox="0 0 100 100" width="24px" height="24px">
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
+              <input
+                type="email"
+                id="futer-email"
+                name="futer-email"
+                placeholder="E-mail"
+                class="futer-email"
+                required
+              />
+              <button type="submit" class="futer-btn">
+                Підписатися
+                <svg viewBox="0 0 100 100" width="24px" height="24px">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
             </div>
           </form>
         </div>
       </div>
     </footer>
+    <!-- modal -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-button" data-modal-close>
@@ -601,10 +656,13 @@
             </label>
           </div>
           <!-- btn-form -->
-          <button type="submit" class="btn-form">Відправити</button>
+          <div>
+            <button type="submit" class="btn-form">Відправити</button>
+          </div>
         </form>
       </div>
     </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

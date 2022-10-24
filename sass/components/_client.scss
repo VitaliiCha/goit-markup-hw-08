@@ -1,15 +1,25 @@
 .client-list {
+    margin-top: 30px;
     display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
+    flex-wrap: wrap;
+    gap: 30px;
 }
+
+.client-box {
+    display: block;
+    max-width: calc((100% - 30px) / 2);
+    flex-direction: column;
+    width: 210px;
+}
+
+
 
 .client-img {
     display: flex;
     align-items: center;
     justify-content: center;
     fill: #afb1b8;
-    width: 170px;
+    width: auto;
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
@@ -17,8 +27,21 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-        fill: var(--accent-color-text);
-        border: 1px solid var(--accent-color-text);
-        border-radius: 4px;
+            fill: var(--accent-color-text);
+            border: 1px solid var(--accent-color-text);
+            border-radius: 4px;
+        }
+}
+
+@media screen and (min-width: 768px) {
+    .client-box {
+        max-width: calc((100% - 30px) / 3);
+        width: 226px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .client-box {
+        width: 170px;
     }
 }
