@@ -138,6 +138,9 @@ ul {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .button-mob {
+    display: none;
+  }
 }
 @media screen and (max-width: 768px) {
   .header__nav {
@@ -154,7 +157,7 @@ ul {
   letter-spacing: 0.03em;
   color: var(--color-logo);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .logo {
     margin-right: 87px;
   }
@@ -222,7 +225,7 @@ ul {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .menu-button {
     display: none;
   }
